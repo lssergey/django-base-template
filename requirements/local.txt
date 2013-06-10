@@ -18,3 +18,5 @@ pep8
 pylint
 django-discover-runner
 
+IPython
+ipdb
