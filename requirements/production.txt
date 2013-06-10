@@ -41,3 +41,4 @@ South
 commonware
 -e git://github.com/mozilla/nuggets.git#egg=nuggets
 
+requests
