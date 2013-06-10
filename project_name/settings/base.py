@@ -1,10 +1,7 @@
-"""
-This is your project's main settings file that can be committed to your
-repo. If you need to override a setting locally, use local.py
-"""
-
-import os
 import logging
+import os
+import sys
+
 
 # Normally you should not import ANYTHING from Django directly
 # into your settings, but ImproperlyConfigured is an exception.
@@ -22,12 +19,13 @@ def get_env_setting(setting):
 
 # Your project root
 PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__) + "../../../")
+sys.path.append(os.path.join(PROJECT_ROOT, 'apps'))
 
 SUPPORTED_NONLOCALES = ['media', 'admin', 'static']
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ru-ru'
 
 SITE_ID = 1
 
@@ -126,7 +124,7 @@ USE_TZ = True
 # although not all choices may be available on all operating systems.
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
-TIME_ZONE = 'America/Los_Angeles'
+TIME_ZONE = 'Europe/Moscow'
 
 # List of finder classes that know how to find static files in
 # various locations.
